@@ -53,7 +53,6 @@ extension RswiftGenerateInternalResources: XcodeBuildToolPlugin {
 
         let resourcesDirectoryPath = context.pluginWorkDirectory
             .appending(subpath: target.displayName)
-            .appending(subpath: "Resources")
 
         try FileManager.default.createDirectory(atPath: resourcesDirectoryPath.string, withIntermediateDirectories: true)
 
